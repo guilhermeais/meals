@@ -40,4 +40,24 @@ class Meal {
     required this.complexity,
     required this.cost,
   });
+
+  String get complexityText {
+    final parsedComplexities = {
+      Complexity.Simple: "Simples",
+      Complexity.Difficult: "Difícil",
+      Complexity.Medium: "Normal",
+    };
+
+    return parsedComplexities[complexity] ?? 'Desconhecida';
+  }
+
+  String get costText {
+    final parsedCosts = {
+      Cost.Cheap: "Barato",
+      Cost.Fair: "Justo",
+      Cost.Expensive: "Caro",
+    };
+
+    return parsedCosts[cost] ?? 'Desconhecida';
+  }
 }
