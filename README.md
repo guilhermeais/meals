@@ -85,7 +85,7 @@ Mais uma aplicação simples feita no <a href="https://www.udemy.com/course/curs
       },
   ~~~
     
- E quando havia a necessidade de irmos à rota de Configurações, por exemplo, eu usava o Navigartor puxando o contexto da aplicação e puxando para a AppRoutes.SETTINGS, dessa maneira:
+ E quando havia a necessidade de irmos à rota de Configurações, por exemplo, eu usava o <code>Navigator</code> puxando o contexto da aplicação e puxando para a AppRoutes.SETTINGS, dessa maneira:
 ~~~dart
    Navigator.of(context).pushReplacementNamed(AppRoutes.SETTINGS)
 ~~~
