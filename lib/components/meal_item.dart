@@ -7,12 +7,16 @@ class MealItem extends StatelessWidget {
 
   const MealItem({Key? key, required this.meal}) : super(key: key);
   void _selectMeal(BuildContext context) {
-    Navigator.of(context).pushNamed(AppRoutes.MEAL_DETAIL,arguments: meal);
+    Navigator.of(context).pushNamed(
+      AppRoutes.MEAL_DETAIL,
+      arguments: meal,
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap:()=> _selectMeal(context),
+      onTap: () => _selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),

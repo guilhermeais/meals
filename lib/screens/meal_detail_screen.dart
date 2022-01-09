@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/components/main_drawer.dart';
 import 'package:meals/models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
@@ -85,6 +86,12 @@ class MealDetailScreen extends StatelessWidget {
             ))
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pop(meal);
+        },
+        child: const Icon(Icons.star),
       ),
     );
   }
